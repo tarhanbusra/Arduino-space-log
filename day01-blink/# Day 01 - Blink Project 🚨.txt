@@ -1,0 +1,26 @@
+# Day 01 - Blink Project 🚨
+
+This is the classic Blink project using Arduino Uno.  
+It simulates a blinking LED with a 1-second delay.
+
+## Components
+- Arduino Uno
+- LED
+- Resistor (220Ω)
+- Breadboard
+- Jumper Wires
+
+## Circuit Schematic
+![Schematic](blink image.png)
+
+## Code Preview
+```cpp
+void setup() {
+  pinMode(12, OUTPUT);
+}
+void loop() {
+  digitalWrite(12, HIGH);
+  delay(100);
+  digitalWrite(12, LOW);
+  delay(100);
+}
